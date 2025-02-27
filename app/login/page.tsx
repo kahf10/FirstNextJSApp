@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function LoginPage() {
   return (
-    <div className="flex justify-center items-center min-h-screen w-full">
+    <div className="flex justify-center items-center min-h-screen w-full bg-purple-400">
       <main className="w-full max-w-md mx-auto">
         <Card>
           <CardHeader className="space-y-4 flex justify-center items-center">
