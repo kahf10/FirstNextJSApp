@@ -1,4 +1,4 @@
-import "dotenv/config"; // Ensure environment variables are loaded
+import "./db/env-config";
 
 import { defineConfig } from "drizzle-kit";
 
@@ -7,6 +7,6 @@ export default defineConfig({
   out: "./drizzle/migrations",
   dialect: "postgresql",
   dbCredentials: {
-    url: process.env.POSTGRES_URL ?? "", // Ensure the DB URL is provided
+    url: process.env.POSTGRES_URL!,
   },
 });
