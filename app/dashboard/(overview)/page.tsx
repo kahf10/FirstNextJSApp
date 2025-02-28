@@ -7,6 +7,7 @@ import { roboto } from "../../../components/shared/fonts";
 import { Suspense } from "react";
 import StatCardsWrapper from "../stat-cards-wrapper";
 import ExpenseChartWrapper from "../expense-chart-wrapper";
+import LatestReceipts from "../latest-receipts";
 
 export default function Page() {
   return (
@@ -23,7 +24,9 @@ export default function Page() {
         <Suspense fallback={<ExpenditureChartSkeleton />}>
           <ExpenseChartWrapper />
         </Suspense>
-        <LatestReceiptsSkeleton />
+        <Suspense fallback={<LatestReceiptsSkeleton />}>
+          <LatestReceipts />
+        </Suspense>
       </div>
     </main>
   );
