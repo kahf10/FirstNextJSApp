@@ -1,4 +1,4 @@
-import { receipts, vendors } from "@/db/schema";
+import { expenses, receipts, vendors } from "@/db/schema";
 import db from "@/db/drizzle";
 import { count, sql } from "drizzle-orm";
 import { formatCurrency } from "../utils";
@@ -36,5 +36,15 @@ export async function fetchCardData() {
   } catch (errorr) {
     console.error("Error fetching card data:", errorr);
     throw new Error("Failed to fetch card data");
+  }
+}
+
+export async function fetchExpense() {
+  try {
+    const data = await db.select().from(expenses);
+    return data;
+  } catch (error) {
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch the expenses");
   }
 }
