@@ -24,8 +24,8 @@ export async function GET() {
     return NextResponse.json(
       {
         success: false,
-        error: error instanceof Error ? error.message : String(error), // Ensures a proper error message
-        fullError: error, // Logs full error object for debugging
+        error: error instanceof Error ? error.message : String(error),
+        fullError: error,
       },
       { status: 500 }
     );
