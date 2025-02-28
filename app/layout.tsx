@@ -1,4 +1,6 @@
 import "./globals.css";
+import "@/app/globals.css";
+
 import { roboto } from "@/components/shared/fonts";
 import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants";
 import { Metadata } from "next";

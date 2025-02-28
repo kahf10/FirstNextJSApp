@@ -57,7 +57,7 @@ const receipts = [
     amount: "152.99",
     category: "Groceries",
     date: "2023-12-06",
-    status: "failed",
+    status: "paid",
   },
   {
     vendor_id: vendorIds[1],
@@ -106,14 +106,14 @@ const receipts = [
     amount: "60.75",
     category: "Groceries",
     date: "2023-06-09",
-    status: "failed",
+    status: "pending",
   },
   {
     vendor_id: vendorIds[4],
     amount: "95.99",
     category: "Electric Bill",
     date: "2023-06-17",
-    status: "failed",
+    status: "pending",
   },
   {
     vendor_id: vendorIds[5],
@@ -141,7 +141,7 @@ const receipts = [
     amount: "150.0",
     category: "Shopping",
     date: "2022-06-05",
-    status: "failed",
+    status: "pending",
   },
 ];
 
